@@ -6,7 +6,14 @@ Funcionalidade: Alugar Filme
 
   Cenario: Deve alugar um filme com sucesso
     Dado um filme com estoque de 2 unidades
-    E que o preço de aluguel seja R$ 3
+    E que o preço de aluguel seja R$ 3.0
+    Quando alugar
+    Entao o preco do aluguel sera R$ 3.0
+
+  Cenario: Deve criar e alugar um filme com sucesso
+    Dado um filme
+      | estoque | 2 |
+      | preco   | 3 |
     Quando alugar
     Entao o preco do aluguel sera R$ 3
 

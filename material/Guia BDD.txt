@@ -1,0 +1,48 @@
+1 - Baixar Eclipse Java 
+2 - Baixar JDK
+3- Instalar o JDK
+
+4 - Criar novo projeto MAVEN
+ 4.1 - Criar projeto Simples
+ 4.2 - Artifact ID = Nome do Projeto
+
+5- Alterar versão do JRE
+ 5.1 botão direito na raiz do projeto
+ 5.2 Properties
+ 5.3 Java Build Path -> Libraries
+ 5.4 Remove
+ 5.5 Add Librarie -> JRE
+ 5.6 Add JRE 1.8
+ 5.7 Salvar
+
+6 - Properties -> Resources -> Escolha UTF - 8
+
+7- Adicionar dependencias do Cucumber
+<dependencies>
+	<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+
+	<dependency>
+		
+		<groupId>info.cukes</groupId>
+	
+		<artifactId>cucumber-java</artifactId>
+	
+		<version>1.2.5</version>
+	
+	</dependency>
+	
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+	
+	<dependency>
+		
+	<groupId>info.cukes</groupId>
+	
+		<artifactId>cucumber-junit</artifactId>
+	
+		<version>1.2.5</version>
+	
+	</dependency>
+
+</dependencies>
+
+
